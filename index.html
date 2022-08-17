@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jeetwin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Home.css">
+    <script src="https://kit.fontawesome.com/fa9c602c64.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ================  Header Start  ==================== -->
+    <header>
+        <div>
+            <div class="w-full bg-[#111] text-white px-5 lg:px-10 py-5 flex justify-between items-center ">
+                <div>
+                    <a href="./index.html">
+                        <h1 class="font-serif uppercase text-3xl font-bold text-white">Casino<span
+                                class="text-[#f9bb22]"> Baji</span></h1>
+                    </a>
+                </div>
+                <div class="flex items-center gap-5 text-xl font-bold text-black ">
+                    <form action="" class="flex items-center gap-4 from_hidden ">
+                        <div class="relative">
+                            <input class="w-[240px] pl-10 py-2 rounded-md outline-none" type="text"
+                                placeholder="ব্যবহারকারীর নাম">
+                            <br>
+                            <i class="fa-solid fa-user text-[#fbdc60] absolute top-3 left-2"></i>
+                        </div>
+                        <div class="relative">
+                            <input class="w-[240px] pl-10 py-2 rounded-md outline-none" type="text"
+                                placeholder="পাসওয়ার্ড">
+                            <br>
+                            <i class="fa-solid fa-user text-[#fbdc60] absolute top-3 left-2"></i>
+                        </div>
+                        <input class="bg-slate-200 px-5 py-2 rounded-md" type="submit" value="প্রবেশ করুন">
+                        <button class="px-5 py-2  rounded-md refister_button">নিবন্ধন করুন</button>
+                    </form>
+
+                    <div class="flex items-center justify-between gap-4 text-white">
+                        <button> <img class="w-12 rounded-full px-2" src="./assets/bangladeshilog.jpg" alt=""></button>
+                        <button id="mediaButton" class="text-3xl from_login_register"> <i
+                                class="fa-solid fa-bars"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= fixed inset-0 top-20 z-10 bg-black bg-opacity-50 Mobile ar jonnne ==================  -->
+            <div class="w-full flex justify-center items-center font-bold from_login_register">
+                <button class="flex-1 px-5 py-2 refister_button">নিবন্ধন করুন</button>
+                <button class="flex-1 bg-black text-white px-5 py-2 ">প্রবেশ করুন</button>
+            </div>
+        </div>
+        <!-- =================== nav bar desktop  ================= -->
+        <div class="nav w-full text-white font-bold bg-slate-700 px-10 ">
+            <div class="main_list munebar_dst" id="mainListDiv">
+                <div><a href="pages/cricket.html">ক্রিকেট</a></div>
+                <div><a href="pages/Sportsbook.html">স্পোর্টস বুক</a></div>
+                <div><a href="pages/LiveCasino.html">লাইভ ক্যাসিনো</a></div>
+                <div><a href="pages/slots.html">শ্লটস</a></div>
+                <div><a href="pages/table.html">টেবিল</a></div>
+                <div><a href="pages/promotions.html">প্রমোশন</a></div>
+                <div><a href="pages/MobileApp.html">মোবাইল অ্যাপ</a></div>
+                <div><a href="pages/Vpi.html">ভিআইপি</a></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================  Header end  ==================== -->
+    <!-- ================= main start ========================= -->
+    <main>
+        <div>
+            <div class="relative w-full mx-auto">
+                <div class="slide relative">
+                    <img class="w-full h-[300px] md:h-auto z-0 object-cover" src="./assets/hero1.jpg">
+                </div>
+                <div class="slide relative">
+                    <img class="w-full h-[300px]  md:h-auto z-0   object-cover " src="./assets/hero2.jpg">
+                </div>
+                <!-- The previous button -->
+                <a class="absolute left-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
+                    onclick="moveSlide(-1)">❮</a>
+                <!-- The next button -->
+                <a class="absolute right-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
+                    onclick="moveSlide(1)">❯</a>
+                <!-- </div>-->
+                <br>
+                <!-- ====================== The dots ============================-->
+                <div class="flex justify-center items-center space-x-5">
+                    <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(1)"></div>
+                    <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(2)"></div>
+                </div>
+            </div>
+
+            <!-- ==================== marquee ==================  -->
+            <marquee behavior="" direction="" class="font-medium text-xl ">
+                <span class="text-[#f9bb22]  pr-10">বন্ধুকে আমন্ত্রণ করুন প্রতিটি আমন্তনে 300 টাকা পাবেন!</span>
+                <span>ইভো ক্রেজি টাইম : প্রতি রাউন্ডে চারটি উত্তেজনাপূর্ণ বোনাস গেম এবং মাল্টিপ্লায়ারের সাথে ইভো থেকে
+                    অনন্য গেম
+                    শো ক্রেজি টাইম উপভোগ করুন 😱 এটা ক্রেজি টাইম</span>
+                <span>এখনই Sign up করুন এবং 5 spin বিনামূল্যে বোনাস নিন । iPhone 12 Pro Max, OnePlus 8 pro এবং আরও অনেক
+                    কিছু
+                    জিতুন!</span>
+            </marquee>
+
+
+
+            <!-- =============== offer section ==========  -->
+            <div class="from_hidden p-10">
+                <div class="grid grid-cols-3 gap-14">
+                    <div class="col-span-2">
+                        <img class="w-full rounded-lg" src="./assets/offerImages.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="rounded-lg" src="./assets/bigoffer.jpg" alt="">
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ==============  games search ==============  -->
+            <div class="from_hidden">
+                <div class=" flex justify-between items-center px-10 mb-20 ">
+                    <div class="w-3/4  flex gap gap-20 text-xl font-bold">
+                        <div class="dropdown">
+                            <span>প্রদানকারী :</span>
+                            <span onclick="myFunction()" class="dropbtn font-medium cursor-pointer"> All <i
+                                    class="fa-solid fa-caret-down dropbtn"></i>
+                                <div id="myDropdown" class="dropdown-content shadow-2xl">
+                                    <!-- ======================= Start  Dropdown ================ -->
+                                    <div class="dropdown-content_icon cursor-pointer">
+                                        <h1 class="text-2xl font-medium">Mosiur </h1>
+                                        <img class="bg-white p-2 rounded-full shadow-2xl border-red-500 border-2"
+                                            src="https://download.ocms365.com/pn/jwbdt/prod/platform/icon/v2/JILI/icon_1629877465489.png"
+                                            alt="Images">
+                                    </div>
+                                    <div class="dropdown-content_icon cursor-pointer">
+                                        <h1 class="text-2xl font-medium">Mosiur </h1>
+                                        <img class="bg-white p-2 rounded-full shadow-2xl border-red-500 border-2"
+                                            src="https://download.ocms365.com/pn/jwbdt/prod/platform/icon/v2/JILI/icon_1629877465489.png"
+                                            alt="Images">
+                                    </div>
+                                    <div class="dropdown-content_icon cursor-pointer">
+                                        <h1 class="text-2xl font-medium">Mosiur </h1>
+                                        <img class="bg-white p-2 rounded-full shadow-2xl border-red-500 border-2"
+                                            src="https://download.ocms365.com/pn/jwbdt/prod/platform/icon/v2/KM/icon_1629877477322.png"
+                                            alt="Images">
+                                    </div>
+                                    <div class="dropdown-content_icon cursor-pointer">
+                                        <h1 class="text-2xl font-medium">Mosiur </h1>
+                                        <img class="bg-white p-2 rounded-full shadow-2xl border-red-500 border-2"
+                                            src="https://download.ocms365.com/pn/jwbdt/prod/platform/icon/v2/JILI/icon_1629877465489.png"
+                                            alt="Images">
+                                    </div>
+                                    <div class="dropdown-content_icon cursor-pointer">
+                                        <h1 class="text-2xl font-medium">Mosiur </h1>
+                                        <img class="bg-white p-2 rounded-full shadow-2xl border-red-500 border-2"
+                                            src="https://download.ocms365.com/pn/jwbdt/prod/platform/icon/v2/JILI/icon_1629877465489.png"
+                                            alt="Images">
+                                    </div>
+                                    <div class="dropdown-content_icon cursor-pointer">
+                                        <h1 class="text-2xl font-medium">Mosiur </h1>
+                                        <img class="bg-white p-2 rounded-full shadow-2xl border-red-500 border-2"
+                                            src="https://download.ocms365.com/pn/jwbdt/prod/platform/icon/v2/JILI/icon_1629877465489.png"
+                                            alt="Images">
+                                    </div>
+                                    <div class="dropdown-content_icon cursor-pointer">
+                                        <h1 class="text-2xl font-medium">Mosiur </h1>
+                                        <img class="bg-white p-2 rounded-full shadow-2xl border-red-500 border-2"
+                                            src="https://download.ocms365.com/pn/jwbdt/prod/platform/icon/v2/JILI/icon_1629877465489.png"
+                                            alt="Images">
+                                    </div>
+                                    <div class="dropdown-content_icon cursor-pointer">
+                                        <h1 class="text-2xl font-medium">Mosiur </h1>
+                                        <img class="bg-white p-2 rounded-full shadow-2xl border-red-500 border-2"
+                                            src="https://download.ocms365.com/pn/jwbdt/prod/platform/icon/v2/PP/icon_1629877491955.png"
+                                            alt="Images">
+                                    </div>
+                                    <!-- ======================= end  Dropdown ================ -->
+                                </div>
+
+                            </span>
+                        </div>
+                        <div>
+                            <span>দ্বারা ফিল্টার করুন :
+                                <i onclick="myFunction2()" class="fa-solid fa-caret-down dropbtn cursor-pointer  "></i>
+                                <div id="myDropdown2" class="dropdown-content-2 shadow-2xl p-3 ">
+                                    <h1><a href="">Home</a></h1>
+                                    <h1><a href="">Home</a></h1>
+                                    <h1><a href="">Home</a></h1>
+                                    <h1><a href="">Home</a></h1>
+                                    <h1><a href="">Home</a></h1>
+                                    <h1><a href="">Home</a></h1>
+                                    <h1><a href="">Home</a></h1>
+                                    <h1><a href="">Home</a></h1>
+                                    <h1><a href="">Home</a></h1>
+                                    <h1><a href="">Home</a></h1>
+                                </div>
+
+                            </span>
+
+                        </div>
+
+                    </div>
+                    <div class="relative">
+                        <input class="bg-white outline-none border-black border-2 px-10 py-2 rounded-md" type="text"
+                            placeholder="গেমস অনুসন্ধান করুন">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3 top-4"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================ grid ===============  -->
+
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6  gap-4 px-10 mb-10">
+                <div class="">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+
+                <div class="0">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+
+                <div class="0">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="image_hover rounded-lg" src="./assets/bigoffer.jpg" alt="">
+                </div>
+            </div>
+    </main>
+    <!-- ================= main end ========================= -->
+
+
+
+
+
+
+
+
+
+    <!-- ====================== Footer Start =============  -->
+    <!-- <footer>
+        <div class="w-full  bg-[#111] footer_text_color ">
+            <div class="lg:flex justify-between items-center mb-5">
+                <div class="lg:flex items-center gap-10">
+                    <h1 class="font-serif uppercase text-3xl font-bold text-white my-2">Casino<span
+                            class="text-[#f9bb22]">
+                            Baji</span></h1>
+                    <h1 class="pt-4">বাংলাদেশের সেরা অনলাইন ক্যাসিনো স্লট ও লাইভ গেমস</h1>
+                    <div class="footer_socal_media mt-10">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                        <i class="fa-solid fa-envelopes"></i>
+                    </div>
+                </div>
+                <div class="hidden md:block p-3 bg-slate-400 rounded-md">
+                    <div class="">
+                        <h1 class="text-center text-blue-100">EXCELLENT SERVICE</h1>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:flex justify-between items-center">
+                <div>
+                    <div class="footer_manu_bar ">
+                        <a href="">ভিআইপি</a>
+                        <a href="">এফিলিয়াতে প্রোগ্রাম</a>
+                        <a href="">মোবাইল অ্যাপ</a>
+                        <a href="">যোগাযোগ করুন</a>
+                        <a href="">ব্লগ</a>
+                        <a href="">আমাদের সম্পর্কে</a>
+                        <a href="">ব্র্যান্ড অ্যাম্বাসেডর</a>
+                    </div>
+                    <div class="footer_manu_bar">
+                        <a href="">গোপনীয়তা নীতি</a>
+                        <a href="">শর্তাবলী</a>
+                        <a href="">সংযোগ নীতি</a>
+                        <a href="">দায়িত্বশীল জুয়া </a>
+                    </div>
+                </div>
+                <div>
+                    <button class="px-10 py-2  rounded-md refister_button text-black font-bold">অ্যাপ্লিকেশন ডাউনলোড
+                        করুন</button>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+    <!-- ====================== Footer End =============  -->
+
+
+
+
+    <!-- =========== javasrcipt ========== -->
+    <script>
+        var mainListDiv = document.getElementById("mainListDiv"),
+            mediaButton = document.getElementById("mediaButton");
+
+        mediaButton.onclick = function () {
+
+            "use strict";
+
+            mainListDiv.classList.toggle("show_list");
+            mediaButton.classList.toggle("active");
+
+        };
+
+        /* ========================== w3  =================  */
+
+
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+
+        /* ========================== w3  =================  */
+
+        function myFunction2() {
+            document.getElementById("myDropdown2").classList.toggle("show1");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content2");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    var openDropdown2 = dropdowns2[i];
+                    if (openDropdown.classList.contains('show1')) {
+                        openDropdown.classList.remove('show1');
+                    }
+                }
+            }
+        }
+
+
+        // set the default active slide to the first one
+        let slideIndex = 1;
+        showSlide(slideIndex);
+
+        // change slide with the prev/next button
+        function moveSlide(moveStep) {
+            showSlide(slideIndex += moveStep);
+        }
+
+        // change slide with the dots
+        function currentSlide(n) {
+            showSlide(slideIndex = n);
+        }
+
+        function showSlide(n) {
+            let i;
+            const slides = document.getElementsByClassName("slide");
+            const dots = document.getElementsByClassName('dot');
+
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+
+            // hide all slides
+            for (i = 0; i < slides.length; i++) {
+                slides[i].classList.add('hidden');
+            }
+
+            // remove active status from all dots
+            for (i = 0; i < dots.length; i++) {
+                dots[i].classList.remove('bg-yellow-500');
+                dots[i].classList.add('bg-green-600');
+            }
+
+            // show the active slide
+            slides[slideIndex - 1].classList.remove('hidden');
+
+            // highlight the active dot
+            dots[slideIndex - 1].classList.remove('bg-green-600');
+            dots[slideIndex - 1].classList.add('bg-yellow-500');
+        }
+    </script>
+</body>
+
+</html>
