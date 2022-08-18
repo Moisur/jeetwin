@@ -42,8 +42,8 @@
 
                     <div class="flex items-center justify-between gap-4 text-white">
                         <button> <img class="w-12 rounded-full px-2" src="./assets/bangladeshilog.jpg" alt=""></button>
-                        <button id="mediaButton" class="text-3xl from_login_register"> <i
-                                class="fa-solid fa-bars"></i></button>
+                        <button class="text-3xl z-50 from_login_register"> <i id="nav_click_me"
+                                class="fa-solid fa-bars "></i></button>
                     </div>
                 </div>
             </div>
@@ -55,17 +55,23 @@
             </div>
         </div>
         <!-- =================== nav bar desktop  ================= -->
-        <div class="nav w-full text-white font-bold bg-slate-700 px-10 ">
-            <div class="main_list munebar_dst" id="mainListDiv">
-                <div><a href="pages/cricket.html">ক্রিকেট</a></div>
-                <div><a href="pages/Sportsbook.html">স্পোর্টস বুক</a></div>
-                <div><a href="pages/LiveCasino.html">লাইভ ক্যাসিনো</a></div>
-                <div><a href="pages/slots.html">শ্লটস</a></div>
-                <div><a href="pages/table.html">টেবিল</a></div>
-                <div><a href="pages/promotions.html">প্রমোশন</a></div>
-                <div><a href="pages/MobileApp.html">মোবাইল অ্যাপ</a></div>
-                <div><a href="pages/Vpi.html">ভিআইপি</a></div>
+        <div class="relative z-50 ">
+            <div class="absolute top-0 right-0 from_login_register">
+                <div id="show_nav" style="display: none;" class="w-[150px] z- bg-white text-xl font-bold p-3">
+                    <div><a href="pages/cricket.html">ক্রিকেট</a></div>
+                    <div><a href="pages/Sportsbook.html">স্পোর্টস বুক</a></div>
+                    <div><a href="pages/LiveCasino.html">লাইভ ক্যাসিনো</a></div>
+                    <div><a href="pages/slots.html">শ্লটস</a></div>
+                    <div><a href="pages/table.html">টেবিল</a></div>
+                    <div><a href="pages/promotions.html">প্রমোশন</a></div>
+                    <div><a href="pages/MobileApp.html">মোবাইল অ্যাপ</a></div>
+                    <div><a href="pages/Vpi.html">ভিআইপি</a></div>
+                </div>
             </div>
+        </div>
+        <div id="menu_buler_show" style="display:none;"
+            class=" fixed bg-black bg-opacity-50 inset-0 w-full h-full m-auto z-40 ">
+
         </div>
     </header>
 
@@ -75,10 +81,10 @@
         <div>
             <div class="relative w-full mx-auto">
                 <div class="slide relative">
-                    <img class="w-full h-[300px] md:h-auto z-0 object-cover" src="./assets/hero1.jpg">
+                    <img class="w-full z-0 object-cover" src="./assets/hero1.jpg">
                 </div>
                 <div class="slide relative">
-                    <img class="w-full h-[300px]  md:h-auto z-0   object-cover " src="./assets/hero2.jpg">
+                    <img class="w-full z-0   object-cover " src="./assets/hero2.jpg">
                 </div>
                 <!-- The previous button -->
                 <a class="absolute left-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
@@ -295,14 +301,6 @@
     </main>
     <!-- ================= main end ========================= -->
 
-
-
-
-
-
-
-
-
     <!-- ====================== Footer Start =============  -->
     <footer>
         <div class="w-full  bg-[#111] footer_text_color ">
@@ -365,62 +363,113 @@
 
     <!-- =========== javasrcipt ========== -->
     <script>
-        var mainListDiv = document.getElementById("mainListDiv"),
-            mediaButton = document.getElementById("mediaButton");
 
-        mediaButton.onclick = function () {
-
-            "use strict";
-
-            mainListDiv.classList.toggle("show_list");
-            mediaButton.classList.toggle("active");
-
-        };
-
-        /* ========================== w3  =================  */
-
-
-        /* When the user clicks on the button,
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function (event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
+        /* ============== nav bar start =============  */
+        const nav_click_me = document.getElementById("nav_click_me")
+        const show_nav = document.getElementById("show_nav")
+        const menu_buler_show = document.getElementById("menu_buler_show")
+        let show = false;
+        nav_click_me.onclick = function () {
+            show = !show
+            if (show) {
+                show_nav.style.display = "block"
+                menu_buler_show.style.display = "block"
+            } else {
+                show_nav.style.display = "none"
+                menu_buler_show.style.display = "none"
             }
         }
-
-
-        /* ========================== w3  =================  */
-
-        function myFunction2() {
-            document.getElementById("myDropdown2").classList.toggle("show1");
+        menu_buler_show.onclick = function () {
+            show_nav.style.display = "none"
+            menu_buler_show.style.display = "none"
+            return show = !show
         }
+        window.addEventListener('resize', function () {
 
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function (event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content2");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    var openDropdown2 = dropdowns2[i];
-                    if (openDropdown.classList.contains('show1')) {
-                        openDropdown.classList.remove('show1');
-                    }
-                }
+            if (document.documentElement.clientWidth > 1173) {
+                show_nav.style.display = "none"
+                menu_buler_show.style.display = "none"
+                return show = !show
             }
-        }
+
+        })
+        /* ============== nav bar end =============  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // var mainListDiv = document.getElementById("mainListDiv"),
+        //     mediaButton = document.getElementById("mediaButton");
+
+        // mediaButton.onclick = function () {
+        //     mainListDiv.classList.toggle("show_list");
+        // };
+
+        // /* ========================== w3  =================  */
+
+
+        // /* When the user clicks on the button,
+        // toggle between hiding and showing the dropdown content */
+        // function myFunction() {
+        //     document.getElementById("myDropdown").classList.toggle("show");
+        // }
+
+        // // Close the dropdown if the user clicks outside of it
+        // window.onclick = function (event) {
+        //     if (!event.target.matches('.dropbtn')) {
+        //         var dropdowns = document.getElementsByClassName("dropdown-content");
+        //         var i;
+        //         for (i = 0; i < dropdowns.length; i++) {
+        //             var openDropdown = dropdowns[i];
+        //             if (openDropdown.classList.contains('show')) {
+        //                 openDropdown.classList.remove('show');
+        //             }
+        //         }
+        //     }
+        // }
+
+
+        // /* ========================== w3  =================  */
+
+        // function myFunction2() {
+        //     document.getElementById("myDropdown2").classList.toggle("show1");
+        // }
+
+        // // Close the dropdown if the user clicks outside of it
+        // window.onclick = function (event) {
+        //     if (!event.target.matches('.dropbtn')) {
+        //         var dropdowns = document.getElementsByClassName("dropdown-content2");
+        //         var i;
+        //         for (i = 0; i < dropdowns.length; i++) {
+        //             var openDropdown = dropdowns[i];
+        //             var openDropdown2 = dropdowns2[i];
+        //             if (openDropdown.classList.contains('show1')) {
+        //                 openDropdown.classList.remove('show1');
+        //             }
+        //         }
+        //     }
+        // }
 
 
         // set the default active slide to the first one
